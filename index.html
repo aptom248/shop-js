@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <p>フォームの扱い</p>
+    <div>
+      <form method="POST">
+        <div style="height: 150px;">
+          <img src="image/t-shirt-white.png" height="100" id="itemPhoto" />
+        </div>
+        <br /><br />色
+        <select id="colorSelect">
+          <option value="白" selected>白</option>
+          <option value="グレー" selected>グレー</option>
+          <option value="黒" selected>黒</option>
+        </select>
+        <br /><br />数量：
+        <input type="text" size="3" value="0" id="orderQuantity" />
+        <br /><br />サイズ： <input type="radio" name="sizeSelect" value="S" />S
+        <input type="radio" name="sizeSelect" value="M" checked />M
+        <input type="radio" name="sizeSelect" value="L" />L
+        <input type="hidden" name="singlePrice" id="singlePrice" value="800" />
+        <div>
+          <p>合計金額：<span id="totalPrice">0</span>円</p>
+        </div>
+        <br />
+        <input type="submit" value="購入" />
+      </form>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
